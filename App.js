@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Appbar, Searchbar } from 'react-native-paper';
-import { ScrollView, StyleSheet, View ,Text,Image} from 'react-native';
-
+import { Appbar, Searchbar,Avatar} from 'react-native-paper';
+import { ScrollView, StyleSheet, View ,Text,Button} from 'react-native';
   export default class App extends Component {
 render(){
   return(
@@ -20,10 +19,23 @@ render(){
           <Appbar.Action icon="cog"  size={17} onPress={() => console.log('cog pressed')} />
           <Appbar.Action icon="logout"  size={17} onPress={() => console.log('logout pressed')} />
   </Appbar>
-  <View style={{flex:1 ,marginTop:16, marginRight:10 ,marginLeft:10}}> 
-    <Searchbar placeholder="i want to study with" icon={ require('./logo.png')} ></Searchbar>
-  </View>
+  
 
+         <View style={{flex:1 ,marginTop:16, marginRight:10 ,marginLeft:10}}> 
+           <Searchbar placeholder="i want to study with" icon={ require('./logo1.png')} ></Searchbar>
+      <View>
+
+      <View style={{flex:2,flexDirection:"row"}} >
+        <View style={{marginTop:16}}>
+       
+        </View> 
+
+        <View style={{marginTop:80,flex:2,flexDirection:"row"}}>
+      <Avatar.Image size={80} source ={require('./logo.png') }></Avatar.Image>
+      </View>
+      </View>
+  </View>
+  </View>
   </View> 
  );
 
