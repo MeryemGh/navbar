@@ -20,8 +20,8 @@ render(){
           <Appbar.Action icon="cog"  size={17} onPress={() => console.log('cog pressed')} />
           <Appbar.Action icon="logout"  size={17} onPress={() => console.log('logout pressed')} />
   </Appbar>
-  <View style={{flex:1 ,marginTop:16}}> 
-    <Searchbar></Searchbar>
+  <View style={{flex:1 ,marginTop:16, marginRight:10 ,marginLeft:10}}> 
+    <Searchbar placeholder="i want to study with" icon={ require('./logo.png')} ></Searchbar>
   </View>
 
   </View> 
