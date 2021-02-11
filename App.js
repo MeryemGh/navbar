@@ -25,15 +25,18 @@ render(){
            <Searchbar placeholder="i want to study with" icon={ require('./logo1.png')} ></Searchbar>
       <View>
 
-      <View style={{flex:2,flexDirection:"row"}} >
-        <View style={{marginTop:16}}>
-       
-        </View> 
-
-        <View style={{marginTop:80,flex:2,flexDirection:"row"}}>
-      <Avatar.Image size={80} source ={require('./logo.png') }></Avatar.Image>
+      <View style={{flex:2,flexDirection:"row",justifyContent:'space-between', marginBottom: 10 ,marginTop:15}}>
+      <View style={{flex:2, marginRight: 5,flexDirection:"row"}}>
+        <View>
+            <Avatar.Image size={80} source ={require('./logo.png') }></Avatar.Image>
+        </View>
+        <View style={{marginLeft:5}}> 
+          <Text style={{ fontWeight: 'bold' ,fontSize :20 }}>Meryem Ghrib</Text>
+          <Text style={{fontSize :15 }}>Student</Text>
+          <Text style={{fontSize :14 }}>Tunisia</Text>
+        </View>
       </View>
-      </View>
+    </View> 
   </View>
   </View>
   </View> 
